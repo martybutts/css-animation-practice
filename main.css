@@ -17,8 +17,11 @@
 }*/
 
 h1 {
-  animation-duration: 3s;
+  display: flex;
+  justify-content: center;
+  animation-duration: 5s;
   animation-name: slidein;
+  animation-iteration-count: 2;
 }
 
 @keyframes slidein {
@@ -26,9 +29,31 @@ h1 {
     margin-left: 100%;
     width: 300%;
   }
-
   to {
     margin-left: 0%;
     width: 100%;
+  }
+  50% {
+  font-size: 300%;
+  margin-left: 5%;
+  width: 150%;
+  }
+}
+
+p {
+  animation-duration: 3s;
+  animation-name: slideacross;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+@keyframes slideacross {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+  to {
+    margin-left:0%;
+    width:100%;
   }
 }
