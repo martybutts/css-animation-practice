@@ -1,0 +1,34 @@
+
+
+/*.square-to-circle{
+  display: block;
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-width: 7px;
+  border-style: solid;
+  border-color: #282828;
+  -webkit-animation-name: animateExamplePetal;
+  animation-name: animateExamplePetal;
+  border: 7px solid red;
+  border-radius: 50%;
+  -webkit-animation: .5s infinite alternate ease-in-out;
+  animation: .5s infinite alternate ease-in-out;
+}*/
+
+h1 {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
