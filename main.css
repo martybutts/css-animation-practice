@@ -1,27 +1,9 @@
 
-
-/*.square-to-circle{
-  display: block;
-  height: 100px;
-  width: 100px;
-  margin: 0 auto;
-  border-width: 7px;
-  border-style: solid;
-  border-color: #282828;
-  -webkit-animation-name: animateExamplePetal;
-  animation-name: animateExamplePetal;
-  border: 7px solid red;
-  border-radius: 50%;
-  -webkit-animation: .5s infinite alternate ease-in-out;
-  animation: .5s infinite alternate ease-in-out;
-}*/
-
 h1 {
   display: flex;
   justify-content: center;
   animation-duration: 5s;
   animation-name: slidein;
-  animation-iteration-count: 2;
 }
 
 @keyframes slidein {
@@ -43,8 +25,8 @@ h1 {
 p {
   animation-duration: 3s;
   animation-name: slideacross;
-  animation-iteration-count: 3;
   animation-direction: alternate;
+  animation-fill-mode: forwards;
 }
 
 @keyframes slideacross {
@@ -53,6 +35,12 @@ p {
     width:300%
   }
   to {
+    display: flex;
+    justify-content: center;
+    margin-left: 48%;
+    width: 0%;
+  }
+  50% {
     margin-left:0%;
     width:100%;
   }
