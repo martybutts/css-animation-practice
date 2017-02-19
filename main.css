@@ -2,46 +2,51 @@
 h1 {
   display: flex;
   justify-content: center;
-  animation-duration: 5s;
-  animation-name: slidein;
+  /*animation-duration: 5s;
+  animation-name: slidein;*/
 }
 
-@keyframes slidein {
+/*@keyframes slidein {
   from {
     margin-left: 100%;
-    width: 300%;
+    width: 100%;
   }
   to {
     margin-left: 0%;
     width: 100%;
-  }
-  50% {
-  font-size: 300%;
+  }*/
+  /*50% {
   margin-left: 5%;
-  width: 150%;
-  }
-}
+  width: 100%;
+  }*/
+/*}*/
+
 
 p {
-  animation-duration: 3s;
-  animation-name: slideacross;
-  animation-direction: alternate;
-  animation-fill-mode: forwards;
+  font-size: 45px;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-name: slideacross;
+  /*animation-direction: alternate;*/
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes slideacross {
   from {
-    margin-left:100%;
+    margin-left:200%;
     width:300%
   }
   to {
-    display: flex;
+    /*display: flex;
     justify-content: center;
-    margin-left: 48%;
-    width: 0%;
+    align-items: 50vh;*/
+    margin-left: -80%;
+    width: -80%;
   }
-  50% {
-    margin-left:0%;
-    width:100%;
+  /*40% {
+    font-size: 200%;
   }
+  57% {
+    font-size: 50%;
+  }*/
 }
